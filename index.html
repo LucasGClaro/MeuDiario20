@@ -1,3 +1,7 @@
+Compartilhar
+
+
+Você disse:
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,22 +13,25 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #333; /* Texto */
             text-align: center;
             background-color: #f5f5f5;
         }
 
+        /* Div principal que imita o body */
         .container {
             width: 100%;
             height: 100%;
-            background-color: #f5f5f5;
+            background-color: #f5f5f5; /* Fundo padrão em cinza claro */
             transition: background-color 0.5s;
         }
 
+        /* Checkbox invisível */
         #toggle-background {
             display: none;
         }
 
+        /* Estilo do botão */
         label {
             padding: 15px 30px;
             background-color: #f3f5f3;
@@ -36,8 +43,9 @@
             transition: background-color 0.3s;
         }
 
+        /* Alteração de cor quando o checkbox é marcado */
         #toggle-background:checked ~ .container {
-            background-color: #7b9b7a;
+            background-color: #7b9b7a; /* Nova cor de fundo */
         }
 
         footer {
@@ -49,7 +57,7 @@
 
         header {
             padding: 20px;
-            background-color: #fffcf7;
+            background-color: #fffcf7; /* Barra de cima */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -71,7 +79,7 @@
         .hero {
             padding: 50px 20px;
             background-attachment: fixed;
-            background-image: url('cascavel.jpg');
+            background-image: url('cascavel.jpg'); /* Imagem de Cascavel ou algo relacionado */
             background-size: cover;
             background-position: center;
             color: #ffffff;
@@ -93,15 +101,16 @@
         }
 
         .entry {
-            background-color: rgba(0, 0, 0, 0.05);
+            background-color: rgba(0, 0, 0, 0.05); /* Fundo das entradas */
             padding: 20px;
-            margin: 15px auto;
+            margin: 15px;
             width: 80%;
             max-width: 800px;
             border-radius: 8px;
             text-align: left;
             transition: transform 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .entry:hover {
@@ -177,52 +186,44 @@
     </header>
 
     <input type="checkbox" id="toggle-background">
+    <!-- Label que age como botão -->
     <label for="toggle-background">Mudar Cor de Fundo</label>
 
     <div class="container">
 
         <section class="hero" id="home">
-            <h1>Bem-vindo ao meu Diário</h1>
-            <h2>Diário de Lucas</h2>
+            <h1>Bem-vindo ao meu Diario</h1>
+            <h2>Diario de Lucas</h2>
         </section>
 
         <section class="section" id="diario">
             <h3></h3>
 
             <div class="entry">
+                <h3>Começo do meu dia</h3>
+                <p> Hoje acordei, escovei os dentes e logo em seguida fui atrás de um dinossauro para comer de café da manha e garantir o almoço de hoje, depoi de todo esse processo fui para a escola, mas esqueci que era sabado e voltei para  casa</p>
+            </div>
+
+            <div class="entry">
                 <h3>Meu almoço</h3>
-                <div style="display: flex; align-items: center;">
-                    <img src="braquiossauro.jpeg" alt="Braquiossauro" style="width: 150px; height: auto; margin-right: 20px;">
-                    <p>Cheguei em casa depois de acidentalmente ir para a escola, fui assar a carne de dinossauro, para ser mais específico, carne de braquiossauro...</p>
-                </div>
+                <p>Cheguei em casa depois de acidentalmente ir para a escola, fui assar a carne de dinossauro, para ser mais especifico, carne de braquiossauro, uma carne boa, massia, suculenta e com um gosto bem exotico por conta que o braquiossauro foi criado em uma fazenda privada, essa carne junto com uma samambaia, lagosta boxeadora do chile, uma salsicha com um pouco de coca cola com um leve adoçamenento de aspirina </p>
             </div>
 
             <div class="entry">
                 <h3>Minha Tarde/Noite</h3>
-                <div style="display: flex; align-items: center;">
-                    <img src="Flag_of_Australia.svg.png" alt="Bandeira da Austrália" style="width: 150px; height: auto; margin-right: 20px;">
-                    <p>Logo após almoçar, tirei uma soneca de duas horas, aí fui no sítio do tio Harry para ajudá-lo a colher algumas plantas...</p>
-                </div>
-            </div>
-
-            <div class="entry">
-                <h3>Javali na batalha</h3>
-                <div style="display: flex; align-items: center;">
-                    <img src="javali.png" alt="Javali" style="width: 150px; height: auto; margin-right: 20px;">
-                    <p>Um javali que enfrentei durante o sonho, poderoso e resistente, mas não conseguiu sobreviver à mordida devastadora do Pokémon Bruno.</p>
-                </div>
+                <p>Logos apos almoçar, tirei uma soneca de duas horas, aí fui no sitio do tio harry, para ajuda-lo a colher algumas plantas e cogumelos e por acidente comi 5 canudos e fui para o hospital, passei a noite no hospital desmaiado mas me recordo de sonhar matando 7 javalis na australia no dente, peguei aí achei o sebastiao ele me xingou e eu peguei meu javali que eu matei invoquei ele e mandei o pega-lo quando iniciamos uma batalha pokemon, ele escolheu um dos pokemons mais raros e fortes Bruno, um pokemon preto por conta de ser Shiny e ter nascido na bolivia, quando ele usou o golpe gomilão e matou meu javali em uma só mordida e disse "ai ai como eu gosto de comer", aí eu acordei e foi só progresso na recuperação dos canudos</p>
             </div>
 
         </section>
 
         <section class="section" id="sobre">
             <h3>Resumo de hoje</h3>
-            <p>matei um dinossauro, fui para a Austrália e fiz uma batalha Pokémon.</p>
+            <p>matei um dinossauro, fui para a australia e fiz uma batalha pokemon</p>
         </section>
 
         <section class="section" id="contato">
             <h3>Contato</h3>
-            <p>Compartilhe suas histórias conosco:</p>
+            <p>Compartilhe suas historias com nosco:</p>
             <p>Email: lucasgunhaclaro@gmai.com</p>
             <div class="newsletter">
                 <h4>Assine minha Newsletter</h4>
